@@ -25,3 +25,90 @@ MonoBehaviour:
     - {x: -12.5, y: -4.5}
     - {x: -12.5, y: -15}
   tilemapData: {fileID: 5934331551690918048, guid: 4fff14e09a6b5ba4db48a2c61150d38e, type: 3}
+  waveData:
+  - enemies:
+    - health: 50
+      enemySpeed: 10
+      spawnDelay: 1
+    - health: 50
+      enemySpeed: 10
+      spawnDelay: 1
+    - health: 50
+      enemySpeed: 10
+      spawnDelay: 1
+    timerBetweenRounds: 5
+  - enemies:
+    - health: 55
+      enemySpeed: 12
+      spawnDelay: 1
+    - health: 55
+      enemySpeed: 12
+      spawnDelay: 1
+    - health: 55
+      enemySpeed: 12
+      spawnDelay: 1
+    - health: 135
+      enemySpeed: 6.5
+      spawnDelay: 2
+    - health: 135
+      enemySpeed: 6.5
+      spawnDelay: 2
+    timerBetweenRounds: 5
+  - enemies:
+    - health: 55
+      enemySpeed: 12
+      spawnDelay: 1
+    - health: 55
+      enemySpeed: 12
+      spawnDelay: 1
+    - health: 55
+      enemySpeed: 12
+      spawnDelay: 1
+    - health: 135
+      enemySpeed: 6.5
+      spawnDelay: 2
+    - health: 135
+      enemySpeed: 1
+      spawnDelay: 2
+    - health: 135
+      enemySpeed: 1
+      spawnDelay: 2
+    - health: 135
+      enemySpeed: 1
+      spawnDelay: 2
+    - health: 135
+      enemySpeed: 1
+      spawnDelay: 2
+    timerBetweenRounds: 5
+  - enemies:
+    - health: 225
+      enemySpeed: 6.5
+      spawnDelay: 0.5
+    - health: 225
+      enemySpeed: 6.5
+      spawnDelay: 0.5
+    - health: 225
+      enemySpeed: 6.5
+      spawnDelay: 0.5
+    - health: 225
+      enemySpeed: 6.5
+      spawnDelay: 0.5
+    - health: 225
+      enemySpeed: 6.5
+      spawnDelay: 0.5
+    - health: 225
+      enemySpeed: 6.5
+      spawnDelay: 0.5
+    - health: 225
+      enemySpeed: 6.5
+      spawnDelay: 0.5
+    - health: 225
+      enemySpeed: 6.5
+      spawnDelay: 0.5
+    - health: 225
+      enemySpeed: 6.5
+      spawnDelay: 0.5
+    - health: 225
+      enemySpeed: 6.5
+      spawnDelay: 0.5
+    timerBetweenRounds: 5

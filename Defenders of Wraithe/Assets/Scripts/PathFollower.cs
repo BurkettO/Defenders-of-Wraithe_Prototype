@@ -41,6 +41,17 @@ public class PathFollower : MonoBehaviour
 
                 posBetweenPoints = 0;
             }
-        }      
+        }  
+        
+        else
+        {
+            Player.Instance.UpdateHealth(-1);
+            gameObject.SetActive(false);
+        }
+    }
+
+    public void SetValues(float speed)
+    {
+        this.speed = speed;
     }
 }

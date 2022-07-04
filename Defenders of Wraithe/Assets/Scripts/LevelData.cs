@@ -7,7 +7,8 @@ public class LevelData : ScriptableObject
 {
     public PathContainer pathContainer;
     public Tilemap tilemapData;
-    public WaveDataContainer[] waveData;
+
+    [NonReorderable] public WaveDataContainer[] waveData;
 
     [System.Serializable]
     public struct PathContainer
@@ -18,7 +19,7 @@ public class LevelData : ScriptableObject
     [System.Serializable]
     public struct WaveDataContainer
     {
-        public List<EnemyContainer> enemies;
+        [NonReorderable] public List<EnemyContainer> enemies;
         public float timerBetweenRounds;
     }
 
@@ -28,5 +29,6 @@ public class LevelData : ScriptableObject
         public float health;
         public float enemySpeed;
         public float spawnDelay;
+        public int value;
     }
 }

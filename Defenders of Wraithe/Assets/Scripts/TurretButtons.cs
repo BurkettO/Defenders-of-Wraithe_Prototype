@@ -25,6 +25,8 @@ public class TurretButtons : MonoBehaviour
 
     private bool canPlace;
 
+    private Player player;
+
     private void Awake()
     {
         eventTrigger = GetComponent<EventTrigger>();
@@ -57,6 +59,7 @@ public class TurretButtons : MonoBehaviour
     private void Start()
     {
         cam = Camera.main;
+        player = Player.Instance;
     }
 
     private void PointerEnter()
@@ -95,7 +98,7 @@ public class TurretButtons : MonoBehaviour
         turretDragSprite.transform.position = (Vector2)Input.mousePosition + new Vector2(32, 32);
 
         RaycastHit2D hit = Physics2D.CircleCast(cam.ScreenToWorldPoint(Input.mousePosition), turret.placeRadius, new Vector2(0, 0), 0, layerMask);
-        canPlace = hit.transform == null ? true : false;
+        canPlace = hit.transform == null && turret.cost < player.currencyCur && turret.capacity + player.turretCapCur <= player.turretCapMax ? true : false;
 
         if (canPlace)
         {
@@ -124,6 +127,9 @@ public class TurretButtons : MonoBehaviour
         {
             TurretBehaviour turretBehaviour = Instantiate(turret.turretPrefab, cam.ScreenToWorldPoint(Input.mousePosition), Quaternion.identity).GetComponent<TurretBehaviour>();
             turretBehaviour.Setup(turret);
+
+            player.UpdateCurrency(-turret.cost);
+            player.UpdateTurretCapacity(turret.capacity);
         }
     }
 
@@ -140,5 +146,7 @@ public class TurretButtons : MonoBehaviour
         public float targetRadius;
         public float rpm;
 
+        public int capacity;
+        public int cost;
     }
 }

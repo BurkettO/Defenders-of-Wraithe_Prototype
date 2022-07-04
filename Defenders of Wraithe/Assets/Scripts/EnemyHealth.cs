@@ -4,6 +4,21 @@ using UnityEngine;
 
 public class EnemyHealth : Damageable
 {
+    private Animator anim;
+
+    private int value;
+
+    private void Awake()
+    {
+        anim = GetComponent<Animator>();
+    }
+
+    public override void TakeDamage(float damage)
+    {
+        base.TakeDamage(damage);
+        anim.Play("Damaged");
+    }
+
     public void SetHealth(float value)
     {
         healthMax = value;
@@ -11,8 +26,21 @@ public class EnemyHealth : Damageable
         hasInit = true;
     }
 
+    public void SetValue(int value_)
+    {
+        value = value_;
+    }
+
     private void OnDisable()
     {
-        EnemySpawner.Instance.enemiesKilledInWave += 1;
+        if (healthCur <= 0) 
+        { 
+            EnemySpawner.Instance.enemiesKilledInWave += 1;
+            Player.Instance.UpdateCurrency(value);
+        }
+
+        else { EnemySpawner.Instance.enemiesEscapedInWave += 1; }
+
+        EnemySpawner.Instance.UpdateUI();
     }
 }

@@ -23,21 +23,120 @@ MonoBehaviour:
   tilemapData: {fileID: 4386366032770193527, guid: 56aecc5f730a7b44390ce13d9738b601, type: 3}
   waveData:
   - enemies:
-    - health: 0
-      enemySpeed: 0
-      spawnDelay: 0
-    - health: 0
-      enemySpeed: 0
-      spawnDelay: 0
-    - health: 0
-      enemySpeed: 0
-      spawnDelay: 0
+    - health: 50
+      enemySpeed: 10
+      spawnDelay: 1
+      value: 12
+    - health: 50
+      enemySpeed: 10
+      spawnDelay: 1
+      value: 12
+    - health: 50
+      enemySpeed: 10
+      spawnDelay: 1
+      value: 12
     timerBetweenRounds: 5
-  - enemies: []
+  - enemies:
+    - health: 55
+      enemySpeed: 12
+      spawnDelay: 1
+      value: 12
+    - health: 55
+      enemySpeed: 12
+      spawnDelay: 1
+      value: 12
+    - health: 55
+      enemySpeed: 12
+      spawnDelay: 1
+      value: 12
+    - health: 135
+      enemySpeed: 6.5
+      spawnDelay: 2
+      value: 21
+    - health: 135
+      enemySpeed: 6.5
+      spawnDelay: 2
+      value: 21
     timerBetweenRounds: 5
-  - enemies: []
+  - enemies:
+    - health: 55
+      enemySpeed: 12
+      spawnDelay: 1
+      value: 12
+    - health: 55
+      enemySpeed: 12
+      spawnDelay: 1
+      value: 12
+    - health: 55
+      enemySpeed: 12
+      spawnDelay: 1
+      value: 12
+    - health: 135
+      enemySpeed: 6.5
+      spawnDelay: 2
+      value: 21
+    - health: 135
+      enemySpeed: 1
+      spawnDelay: 2
+      value: 21
+    - health: 135
+      enemySpeed: 1
+      spawnDelay: 2
+      value: 21
+    - health: 135
+      enemySpeed: 1
+      spawnDelay: 2
+      value: 21
+    - health: 135
+      enemySpeed: 1
+      spawnDelay: 2
+      value: 21
     timerBetweenRounds: 5
-  - enemies: []
+  - enemies:
+    - health: 225
+      enemySpeed: 6.5
+      spawnDelay: 0.5
+      value: 32
+    - health: 225
+      enemySpeed: 6.5
+      spawnDelay: 0.5
+      value: 12
+    - health: 225
+      enemySpeed: 6.5
+      spawnDelay: 0.5
+      value: 32
+    - health: 225
+      enemySpeed: 6.5
+      spawnDelay: 0.5
+      value: 32
+    - health: 225
+      enemySpeed: 6.5
+      spawnDelay: 0.5
+      value: 32
+    - health: 225
+      enemySpeed: 6.5
+      spawnDelay: 0.5
+      value: 32
+    - health: 225
+      enemySpeed: 6.5
+      spawnDelay: 0.5
+      value: 32
+    - health: 225
+      enemySpeed: 6.5
+      spawnDelay: 0.5
+      value: 32
+    - health: 225
+      enemySpeed: 6.5
+      spawnDelay: 0.5
+      value: 32
+    - health: 225
+      enemySpeed: 6.5
+      spawnDelay: 0.5
+      value: 32
     timerBetweenRounds: 5
-  - enemies: []
-    timerBetweenRounds: 5
+  - enemies:
+    - health: 5560
+      enemySpeed: 0.5
+      spawnDelay: 2
+      value: 500
+    timerBetweenRounds: 10
